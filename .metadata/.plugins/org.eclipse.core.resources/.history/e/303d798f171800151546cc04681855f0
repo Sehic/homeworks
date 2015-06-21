@@ -1,0 +1,26 @@
+package ba.bitcamp.hajrudin.homeworkWeekend05.task01;
+
+//Opisuje glavnog pozitivca u prici
+public class Protagonist extends Character{
+	private Goal g;
+	private Character[] minor = new Character [3];
+	private Character enemy;
+	
+	public Protagonist(String name, String gender, boolean isCapable, Goal g,
+			Character[] minor, Character enemy) {
+		super(name, gender, isCapable);
+		this.g = g;
+		this.minor = minor;
+		this.enemy = enemy;
+	}
+	
+	public Protagonist(String name, String gender, boolean isCapable, Goal g,
+			Character[] minor) {
+		this(name,gender,isCapable,g,minor,null);
+	}
+	
+	
+	
+	
+	
+}

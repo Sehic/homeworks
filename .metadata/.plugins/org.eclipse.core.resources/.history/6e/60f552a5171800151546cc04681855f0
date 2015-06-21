@@ -1,0 +1,33 @@
+package ba.bitcamp.hajrudin.homeworkWeekend05.task01;
+
+//Opisuje glavnog pozitivca u prici
+public class Protagonist extends Character{
+	private Goal g;
+	private Character[] minors = new Character [4];
+	private Character enemy;
+	private int counter;
+	
+	public Protagonist(String name, String gender, boolean isCapable, Goal g) {
+		super(name, gender, isCapable);
+		this.g = g;
+		this.counter=0;
+	}
+	
+	public void setEnemy(Character enemy){
+		this.enemy=enemy;
+	}
+	
+	public void setMinorCharacter(Character minor){
+		try{
+			this.minors[this.counter]=minor;
+			this.counter++;
+		}catch(Exception e){
+			System.out.println("No more space for minor characters!");
+		}
+	}
+	
+	
+	
+	
+	
+}

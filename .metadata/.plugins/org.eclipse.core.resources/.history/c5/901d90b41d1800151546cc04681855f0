@@ -1,0 +1,101 @@
+package ba.bitcamp.hajrudin.homeworkWeekend05.task01;
+
+//Opisuje glavnog pozitivca u prici
+public class Protagonist extends Character{
+	private Goal g;
+	private Character[] minors = new Character [4];
+	private Character enemy;
+	private int counter;
+	
+	public Protagonist(String name, String gender, boolean isCapable, Goal g) {
+		super(name, gender, isCapable);
+		this.g = g;
+		this.counter=0;
+	}
+	
+	public void setEnemy(Character enemy){
+		this.enemy=enemy;
+	}
+	
+	public void setMinorCharacter(Character minor){
+		try{
+			this.minors[this.counter]=minor;
+			this.counter++;
+		}catch(Exception e){
+			System.out.println("No more space for minor characters!");
+		}
+	}
+	
+	public int attainGoal(){
+		int temp = 0;
+		if(super.getIsAlive()==true){
+			if(super.getIsCapable()==true){
+				temp+=40;
+			}
+			for(int i =0; i<this.minors.length; i++){
+				if(minors[i].getIsCapable()==true){
+					temp+=20;
+					if(temp>100){
+						temp=100;
+					}
+				}
+			}
+			if(this.enemy.getIsCapable()==true){
+				temp-=30;
+				if(temp<0){
+					temp = 0;
+				}
+			}
+			switch(g.getLevel()){
+			case Goal.HARD:
+				temp-=20;
+				if(temp<0){
+					temp=0;
+				}
+				break;
+			case Goal.IMPOSIBLE:
+				temp-=100;
+				if(temp<0){
+					temp=0;
+				}
+				break;
+			}
+			return temp;
+		}else {
+			System.out.println("Main character is not alive");
+			return temp;
+		}
+	}
+	
+	
+	public void isSuccess(int temp){
+		if(temp>50){
+			System.out.println("Success!");
+			System.out.println("Goal was: "+g.getEvent().getStatus());
+			for(int i = 0; i<this.minors.length; i++){
+				if(minors[i].getIsCapable()==false){
+					minors[i].capable();
+					break;
+				}
+			}
+		} else {
+			System.out.println("Failure!");
+			System.out.println("Goal was: "+g.getEvent().getStatus());
+			minors[0].kill();
+			for(int i = 1; i<this.minors.length; i++){
+				if(minors[i].getIsCapable()==false){
+					minors[i].capable();
+					break;
+				}
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+}
