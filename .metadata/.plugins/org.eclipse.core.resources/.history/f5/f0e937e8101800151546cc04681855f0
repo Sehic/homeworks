@@ -1,0 +1,17 @@
+package ba.bitcamp.hajrudin.homeworkWeekend05.task01;
+
+public class Character extends StoryElement{
+	private String gender;
+	private boolean isAlive;
+	private boolean isCapable;
+	
+	public void kill(){
+		this.isAlive=false;
+	}
+	
+	public void capable(){
+		this.isCapable=true;
+	}
+	
+	
+}

@@ -1,0 +1,34 @@
+package ba.bitcamp.hajrudin.homeworkWeekend05.task01;
+
+public class Character extends StoryElement{
+	private String gender;
+	private boolean isAlive;
+	private boolean isCapable;
+	
+	public Character(String name, String gender, boolean isCapable) {
+		super(name);
+		this.gender = gender;
+		this.isAlive = true;
+		this.isCapable = isCapable;
+	}
+
+	public void kill(){
+		this.isAlive=false;
+	}
+	
+	public void capable(){
+		this.isCapable=true;
+	}
+	
+	public boolean getIsAlive(){
+		return this.isAlive;
+	}
+	
+	public boolean getIsCapable(){
+		return this.isCapable;
+	}
+	
+	
+	
+	
+}
