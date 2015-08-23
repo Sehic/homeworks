@@ -1,0 +1,109 @@
+body {
+	background: url("http://pre14.deviantart.net/de69/th/pre/i/2014/052/a/a/as_roma_wallpaper_by_belthazor78-d77ekdi.jpg") no-repeat center center fixed;
+
+-moz-background-size: cover;
+
+-webkit-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
+
+}
+
+#nav_bar ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#nav_bar ul li { display: inline; }
+
+#nav_bar ul li a
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #fff;
+background-color: #100000;
+}
+
+#nav_bar ul li a:hover
+{
+color: 
+background-color: #369;
+}
+footer {
+   color: #0000CC;
+   text-align: center;
+   padding-top: 10px;
+   padding-bottom: 0px;
+}
+
+#title {
+	font-size: 33px;
+	font-family: fantasy;
+	color: #660000
+}
+
+p {
+	color: #CC0000;
+	font-family: sans-serif;
+	font-size: 23px;
+}
+
+#text {
+	margin-left: 60px;
+}
+
+table,th,td {
+	border: 1px solid black;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: red;
+}
+
+#pictures {
+	width: 230px;
+	height: 230px;
+	display: inline;
+}
+
+#video{
+	width: 600px;
+	display: inline;
+}
+
+#rank {
+	border: 3px solid black;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: black;
+}
+
+#title_color{
+	font-size: 17px;
+	font-family: fantasy;
+	color:#660000;
+}
+
+#team{
+	color:black;
+	font-family: inherit;
+}
+
+#my_team{
+	color:#CC3300;
+	font-family: sans-serif;
+}
+
+#player{
+	color:black;
+	font-family: inherit;
+}
+
+#my_player{
+	color:#CC3300;
+	font-family: sans-serif;
+}
