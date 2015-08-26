@@ -11,7 +11,7 @@ background-size: cover;
 
 }
 
-#nav_bar ul
+.nav_bar ul
 {
 margin: 0;
 padding: 0;
@@ -19,9 +19,9 @@ list-style-type: none;
 text-align: center;
 }
 
-#nav_bar ul li { display: inline; }
+.nav_bar ul li { display: inline; }
 
-#nav_bar ul li a
+.nav_bar ul li a
 {
 text-decoration: none;
 padding: .2em 1em;
@@ -29,7 +29,7 @@ color: #fff;
 background-color: #100000;
 }
 
-#nav_bar ul li a:hover
+.nav_bar ul li a:hover
 {
 color: 
 background-color: #369;
@@ -41,7 +41,7 @@ footer {
    padding-bottom: 0px;
 }
 
-#title {
+.title {
 	font-size: 33px;
 	font-family: fantasy;
 	color: #660000
@@ -53,7 +53,7 @@ p {
 	font-size: 23px;
 }
 
-#text {
+.text {
 	margin-left: 60px;
 }
 
@@ -64,46 +64,46 @@ table,th,td {
 	color: red;
 }
 
-#pictures {
+.pictures {
 	width: 230px;
 	height: 230px;
 	display: inline;
 }
 
-#video{
+.video{
 	width: 600px;
 	display: inline;
 }
 
-#rank {
+.rank {
 	border: 3px solid black;
 	margin-left: 50px;
 	margin-right: 50px;
 	color: black;
 }
 
-#title_color{
+.title_color{
 	font-size: 17px;
 	font-family: fantasy;
 	color:#660000;
 }
 
-#team{
+.team{
 	color:black;
 	font-family: inherit;
 }
 
-#my_team{
+.my_team{
 	color:#CC3300;
 	font-family: sans-serif;
 }
 
-#player{
+.player{
 	color:black;
 	font-family: inherit;
 }
 
-#my_player{
+.my_player{
 	color:#CC3300;
 	font-family: sans-serif;
 }
