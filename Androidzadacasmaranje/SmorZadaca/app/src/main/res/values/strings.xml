@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SmorZadaca</string>
+    <string name="title">Add a person</string>
+    <string name="button_text">ADD</string>
+    <string name="hint_firstName">Name</string>
+    <string name="hint_lastName">Surname</string>
+    <string name="remove_button">Remove</string>
+
+    <string name="edit_person_title">Edit person details</string>
+    <string name="save_person_details">Save</string>
+    <string name="sort_name">By name</string>
+    <string name="sort_surname">By surname</string>
+</resources>
